@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo-icon"></div>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="#section-home">Home</a>
+            <a href="#section-our-profile">Our Profile</a>
+            <a href="#section-portofolio">Portofolio</a>
+            <a href="#section-message-us">Message Us</a>
+        </nav>
+    </header>
+
+    <hr />
+
+    <main>
+        <!-- Home Section -->
+        <section id="section-home">
+            <header>
+                <h1 id="welcomeMessage">Hi User, Welcome to My Website</h1>
+            </header>
+
+            <article>
+                <p>Pixel is Masterpiece</p>
+            </article>
+        </section>
+
+
+
+        <!--Photo Banner-->
+            <div class="slideshow-container">
+                <!-- Gif pertama -->
+                <div class="mySlides fade">
+                    <img src="./assets/d.gif" style="width:100%">
+                </div>
+            
+                <!-- Gif kedua -->
+                <div class="mySlides fade">
+                    <img src="./assets/ss.gif" style="width:100%">
+                </div>
+            
+                <!-- Gif ketiga -->
+                <div class="mySlides fade">
+                    <img src="./assets/aa.gif" style="width:100%">
+                </div>
+            
+                <!-- Tombol Next dan Prev -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            
+            <!-- Bullet indicator -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            
+        </section>
+
+        <hr />
+
+        <!-- Our Profile -->
+        <section id="section-our-profile">
+            <header>
+                <h1>Our Profile</h1>
+                <button id="toggleProfile">Hide</button>
+            </header>
+
+            <div class="profile-icon-container">
+                <div>
+                    <div class="profile-icon-1"></div>
+                    <h4>Jakarta</h4>
+                </div>
+    
+                <div>
+                    <div class="profile-icon-2"></div>
+                    <h4>Bandung</h4>
+                </div>
+    
+                <div>
+                    <div class="profile-icon-3"></div>
+                    <h4>Surabaya</h4>
+                </div>
+            </div>
+        </section>
+
+        <hr />
+
+        <!-- Portofolio -->
+        <section id="section-portofolio">
+            <header>
+                <h1>Portofolio</h1>
+                <button id="togglePortofolio">Hide</button>
+            </header>
+            
+            <div class="my-portofolio">
+                <p>Halo, saya Oktaviano, siswa SMK kelas 11 jurusan Teknik Komputer dan Jaringan. Berikut adalah beberapa proyek yang telah saya kerjakan:</p>
+        
+                <h4>My Project:</h4>
+            
+                <article>
+                    <h4>1. Aplikasi Kalkulator Sederhana</h4>
+                    <p>Deskripsi: Aplikasi kalkulator berbasis desktop yang dibuat dengan menggunakan Windows Forms. Memiliki fitur dasar seperti penjumlahan, pengurangan, perkalian, dan pembagian.</p>
+                    <p>Link: <a href="https://drive.google.com/drive/folders/1OR9ER5Rkj6DJX9vhRDxhYKMr9ZJwn92l?usp=drive_link">Lihat Proyek</a></p>
+                </article>
+            
+                <article>
+                    <h4>2. Website Portofolio Pribadi</h4>
+                    <p>Deskripsi: Website ini adalah portofolio pribadi saya yang menampilkan proyek-proyek yang telah saya kerjakan. Dibangun dengan HTML, CSS, dan JavaScript.</p>
+                    <p>Link: <a>Link? Wong ini websitenya.</a></p>
+                </article>
+            
+                <h4>Keahlian</h4>
+                <ul>
+                    <li>HTML, CSS, JavaScript (Masih Belajar)</li>
+                    <li>C# (Masih Belajar Juga)</li>
+                    <li>Konfigurasi Jaringan via Cisco Packet Tracer (Masih Belajar Juga pt.2)</li>
+                    <li>Merakit Komputer (Nanti Ketika Kelas 12 Sepertinya)</li>
+                    <li>Bahasa Inggris (Masih Belajar Juga hehe)</li>
+                    <li>Bahasa Jepang (Masih Belajar Juga :v)</li>
+                </ul>
+        
+                <h4>Kontak</h4>
+                <p>Kritik dan sarannya, silakan hubungi saya di <a href="mailto:oktaviano2007@gmail.com">oktaviano2007@gmail.com</a>.</p>
+                <p>Instagram: <a href="https://www.instagram.com/oktt_4u/?__pwa=1">DM Disini</a></p>
+            </div>
+        </section>
+        
+
+        <hr />
+
+        <!-- Message Us -->
+        <section id="section-message-us">
+            <header>
+                <h1>Message Us</h1>
+                <button id="toggleMessageUs">Hide</button>
+            </header>
+
+            <div class="form-container">
+                <!-- Tabel Input -->
+                <div class="form-left">
+                    <table>
+                        <tr>
+                            <td><label for="name">Nama:</label></td>
+                            <td><input type="text" id="name" name="name" placeholder="Nama" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="birthdate">Tanggal Lahir:</label></td>
+                            <td><input type="date" id="birthdate" name="birthdate" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="gender">Jenis Kelamin:</label></td>
+                            <td>
+                                <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                                <label for="male">Laki-Laki</label>
+                                <input type="radio" id="female" name="gender" value="Perempuan" required>
+                                <label for="female">Perempuan</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Pesan:</label></td>
+                            <td><textarea id="message" name="message" placeholder="Pesan" rows="4" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="submit" id="submitButton">Submit</button></td>
+                        </tr>
+                    </table>
+                </div>
+            
+                <!-- Tabel Hasil Output -->
+                <div id="result" class="result-right">
+                    <table>
+                        <tr>
+                            <td>Nama:</td>
+                            <td id="resultName">-</td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Lahir:</td>
+                            <td id="resultBirthdate">-</td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin:</td>
+                            <td id="resultGender">-</td>
+                        </tr>
+                        <tr>
+                            <td>Pesan:</td>
+                            <td id="resultMessage">-</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+                        
+        </section>
+    </main>
+
+    <footer>
+		Created by Oktaviano
+	</footer>
+
+    <script src="js/script.js"></script>
+</body>
